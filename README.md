@@ -63,12 +63,12 @@ A Python-based web application for processing and analyzing incident report PDFs
 
 This project leverages the following libraries and tools:
 
-PyPDF: For PDF parsing and text extraction.
-UMAP: For dimensionality reduction.
-SQLite: For lightweight database storage.
-Flask: For the web framework.
-Matplotlib and Seaborn: For visualizations.
-Scikit-learn: For K-Means clustering.
+1. PyPDF: For PDF parsing and text extraction.
+2. UMAP: For dimensionality reduction.
+3. SQLite: For lightweight database storage.
+4. Flask: For the web framework.
+5. Matplotlib and Seaborn: For visualizations.
+6. Scikit-learn: For K-Means clustering.
 
 ---
 
