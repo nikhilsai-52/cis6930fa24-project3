@@ -44,6 +44,21 @@ A Python-based web application for processing and analyzing incident report PDFs
      - index: Handles file uploads and data extraction.
      - visualize: Displays visualizations of the data.
 ---
+## How to run
+
+1. Installation Command 
+   ```bash
+   pipenv install flask pandas pypdf matplotlib seaborn scikit-learn umap-learn scipy numpy
+
+2. Running the code 
+   ```bash
+   pipenv run python app.py
+
+3. Open the web application in the browser at
+   ```bash
+   http://127.0.0.1:5000
+---
+
 ## External Resources 
 
 This project leverages the following libraries and tools:
