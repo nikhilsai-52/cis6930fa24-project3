@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Incident Report Visualizations</title>
+    <!-- Bootstrap CSS -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous"
+    >
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .visualization-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Incident Visualizations</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Back to Upload</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="py-5 text-center">
+        <h1 class="display-5 fw-bold">Incident Report Visualizations</h1>
+        <p class="lead text-muted">Explore clustering results and patterns in reported incidents</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container pb-5">
+        <div class="row g-4">
+            <!-- Clustering Results -->
+            <div class="col-12 col-md-6 visualization-card">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Clustering Results</h2>
+                        <p class="card-text text-muted">K-Means clustering applied to incident data, visualized after dimensionality reduction.</p>
+                        <img src="{{ url_for('static', filename='kmeans_cluster_umap.png') }}" 
+                             alt="K-Means Cluster Scatter Plot">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Comparison (Bar Graph) -->
+            <div class="col-12 col-md-6 visualization-card">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Comparison (Bar Graph)</h2>
+                        <p class="card-text text-muted">Top 20 incident nature counts visualized in a bar chart for quick comparison.</p>
+                        <img src="{{ url_for('static', filename='bar_chart.png') }}" 
+                             alt="Bar Chart">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Heatmap -->
+            <div class="col-12 visualization-card">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Heatmap</h2>
+                        <p class="card-text text-muted">A heatmap showing the distribution of top natures across top locations, helping identify hotspots.</p>
+                        <img src="{{ url_for('static', filename='heatmap.png') }}" 
+                             alt="Heatmap of Top Natures and Locations">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
