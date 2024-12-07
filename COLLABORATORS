@@ -1,0 +1,7 @@
+Flask Official Documentation,https://flask.palletsprojects.com/, Understood setting up routes (@app.route), handling file uploads, rendering templates (Jinja2)
+Bootstrap Documentation,https://getbootstrap.com/docs/5.3/, Used for styling HTML templates, adding responsive design, and managing layouts.
+matplotlib Documentation,https://matplotlib.org/stable/, Used for generating static plots (bar charts, scatter plots) and saving them as images.
+Seaborn Documentation,https://seaborn.pydata.org/, Used for creating attractive statistical graphics.
+UMAP for Dimensionality Reduction,https://umap-learn.readthedocs.io/en/latest/, Understood on how to use UMAP to reduce high-dimensional data into 2D or 3D embeddings for visualization.
+scikit-learn Documentation, https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html, Understood how to perform clustering with KMeans, including parameter choices and interpreting the results.
+SciPy Documentation(ConvexHull), https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.ConvexHull.html , Understood how to compute and visualize convex hulls around clusters of points.
