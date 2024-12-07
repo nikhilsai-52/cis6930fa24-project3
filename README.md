@@ -90,15 +90,15 @@ This project leverages the following libraries and tools:
 ## Development Process
 
 1. PDF Data Extraction:
-    Used PyPDF for text extraction.
-    Developed regex-based parsing to handle whitespace-separated fields.
+   - Used PyPDF for text extraction.
+   - Developed regex-based parsing to handle whitespace-separated fields.
 
 2. Data Storage:
-    Stored parsed data in a SQLite database for querying and visualization.
+   - Stored parsed data in a SQLite database for querying and visualization.
 
 3. Visualization:
-    Experimented with UMAP for dimensionality reduction and K-Means clustering.
-    Added multiple visualization types to highlight key patterns.
+   - Experimented with UMAP for dimensionality reduction and K-Means clustering.
+   - Added multiple visualization types to highlight key patterns.
 
 4. Web Application:
-    Built a simple Flask interface for uploading PDFs and displaying results.
+   - Built a simple Flask interface for uploading PDFs and displaying results.
