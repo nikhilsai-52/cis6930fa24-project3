@@ -43,6 +43,17 @@ A Python-based web application for processing and analyzing incident report PDFs
    - Flask application that manages the web interface:
      - index: Handles file uploads and data extraction.
      - visualize: Displays visualizations of the data.
+
+4. **index.html**
+   - The main landing page for file uploads:
+      - Uploads PDF Files: Provides a form to select and upload one or more incident report PDFs.
+      - User Interface: Uses Bootstrap for a clean, responsive layout, and custom styles for the upload container.
+
+5. **visualize.html**
+   - Displays the visual insights after PDF processing
+      - Visualizations: Shows K-Means clustering results, bar charts of incident types, and a heatmap of location-based incidents.
+      - Navigation: Includes a navigation bar for easy access back to the file upload page.
+      - Layout: Uses Bootstrap for a responsive design with separate cards for each type of visualization.
 ---
 ## How to run
 
