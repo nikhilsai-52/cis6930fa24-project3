@@ -69,7 +69,11 @@ A Python-based web application for processing and analyzing incident report PDFs
    ```bash
    http://127.0.0.1:5000
 ---
+## Video Demo
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FVGqJKeSA0g?si=0FjoC4aPCIv38BfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 ## External Resources 
 
 This project leverages the following libraries and tools:
