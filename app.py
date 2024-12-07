@@ -18,7 +18,6 @@ def index():
         
         files = request.files.getlist("files")
         
-        # Check if any file was selected
         if len(files) == 0 or files[0].filename == "":
             flash("No selected files")
             return redirect(request.url)
@@ -28,7 +27,6 @@ def index():
                 continue
             file_path = os.path.join(app.config["UPLOAD_FOLDER"], file.filename)
             file.save(file_path)
-            # Extract data from the PDF
             with open(file_path, "rb") as f:
                 data = extract_incident_data(f.read())
             store_in_database(data)
@@ -39,9 +37,8 @@ def index():
 
 @app.route("/visualize")
 def visualize():
-    generate_visualizations()  # Generate charts
+    generate_visualizations()  
     bar = "bar_chart.png"
-    # If you have multiple charts, you can add them here
     return render_template("visualize.html", bar=bar)
 
 if __name__ == "__main__":
